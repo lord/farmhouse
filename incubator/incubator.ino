@@ -59,7 +59,8 @@ bool incubatorLoop() {
 
   // Check if any reads failed and exit early (to try again).
   if (isnan(h) || isnan(t)) {
-    Serial.println("Failed to read from incubator temp sensor.");
+    Serial.println("Failed to read from incubator temp sensor, disabling incubator.");
+    digitalWrite(incubatorPin, HIGH);
     return false;
   }
 
