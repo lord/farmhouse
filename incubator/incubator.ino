@@ -1,6 +1,3 @@
-// Example testing sketch for various DHT humidity/temperature sensors
-// Written by ladyada, public domain
-
 #include "DHT.h"
 #define DHTPIN 2        // digital pin of temp sensor
 #define DHTTYPE DHT11   // DHT 11
@@ -18,8 +15,8 @@ int incubatorPin = 7;
 int cookerPin = 6;
 int errorPin = 13;
 
-float incubatorLow = 100.0; // below this temp the lights activate
-float incubatorHigh = 105.0; // above this temp the lights deactivate
+float incubatorLow = 95.0; // below this temp the heater/lights activate
+float incubatorHigh = 98.0; // above this temp the heater/lights deactivate
 
 void setup() {
   Serial.begin(9600);
