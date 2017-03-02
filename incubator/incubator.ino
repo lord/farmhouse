@@ -21,19 +21,26 @@ int incubatorPin = 7;
 int cookerPin = 6;
 int errorPin = 13;
 
-float incubatorLow = 95.0; // below this temp the heater/lights activate
-float incubatorHigh = 98.0; // above this temp the heater/lights deactivate
+float incubatorLow = 92.0; // below this temp the heater/lights activate
+float incubatorHigh = 88.0; // above this temp the heater/lights deactivate
 
 // cooker temps are in celsius
 
 // best eggs
-// float cookerLow = 62.5; // 144.5 F
-// float cookerHigh = 62.8; // 145.0 F
+float cookerLow = 62.5; // 144.5 F
+float cookerHigh = 62.8; // 145.0 F
 // see http://www.seriouseats.com/2013/10/sous-vide-101-all-about-eggs.html
 
 // garlic stuff
-float cookerLow = 88.0;
-float cookerHigh = 88.5;
+// float cookerLow = 88.0;
+// float cookerHigh = 88.5;
+//float cookerLow = 0;
+//float cookerHigh = 0;
+
+// medium rare steak 130 F
+// float cookerLow = 54.4;
+// float cookerHigh = 54.7;
+
 
 void setup() {
   Serial.begin(9600);
