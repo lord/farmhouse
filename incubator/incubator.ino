@@ -27,9 +27,13 @@ float incubatorHigh = 88.0; // above this temp the heater/lights deactivate
 // cooker temps are in celsius
 
 // best eggs
-float cookerLow = 62.5; // 144.5 F
-float cookerHigh = 62.8; // 145.0 F
+// float cookerLow = 62.5; // 144.5 F
+// float cookerHigh = 62.8; // 145.0 F
 // see http://www.seriouseats.com/2013/10/sous-vide-101-all-about-eggs.html
+
+// for float tank
+float cookerLow = 34.15; // 93.47 F
+float cookerHigh = 34.2; // 93.56 F
 
 // garlic stuff
 // float cookerLow = 88.0;
